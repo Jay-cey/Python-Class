@@ -1,6 +1,11 @@
 # Dictionary
 
-electronics = {"name" : "Television", "brand" : "LG", "colour" : "Black", "inches" : "75'"}
+electronics = {
+                "name" : "Television",
+                "brand" : "LG", 
+                "colour" : "Black", 
+                "inches" : "75'"
+            }
 item = dict(name="telemundo", brand="Hisense", colour="Brown")
 
 '''
