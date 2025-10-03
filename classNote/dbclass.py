@@ -2,7 +2,7 @@ import pymysql as pyms
 import time
 
 
-con_sql = pyms.connect(host = "127.0.0.1", user="root", password="Cxerrexc22.", db="studentsDB")
+con_sql = pyms.connect(host = "127.0.0.1", user="root", password="", db="studentsDB")
 print("Connection Successful")
 
 # create cursor after connection. It travels baack and forth to the database...
