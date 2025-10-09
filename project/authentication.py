@@ -12,6 +12,10 @@ class Auth:
         student = self.db.fetch_one("SELECT * FROM students WHERE email=%s AND password=%s", (email, password))
         if student is not None: return student
 
+    def login_admin(self, email, password):
+        admin = self.db.fetch_one("SELECT * FROM admin WHERE email=%s AND password=%s", (email, password))
+        if admin is not None: return admin
+
     def generate_matric(self):
         import random
         return "MAT" + str(random.randint(1000, 9999))
