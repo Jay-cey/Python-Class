@@ -1,5 +1,17 @@
 # Python-specific folders
 __pycache__/
+*.pyc
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Environment variables
+# Prevent sensitive credentials from being committed
+.env
+
+# Virtual environments
+venv/
+env/
+
+# Editor-specific files
+.vscode/

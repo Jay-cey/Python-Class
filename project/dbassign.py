@@ -13,11 +13,11 @@ class Database_operations:
         self.con_sql = pyms.connect(host = "127.0.0.1", user="root", password="",)
         self.cursor = self.con_sql.cursor()
 
-    def connect_db(self):
+    def connect_db(self, host, user, password):
         self.connection = True
-        self.con_sql = pyms.connect(host = "127.0.0.1", user="root", password="", db=self.db)
+        self.con_sql = pyms.connect(host=host, user=user, password=password, db=self.db)
         self.cursor = self.con_sql.cursor()
-        print(f"Connection to {self.db} is successful")
+        print(f"✅ Connection to database '{self.db}' is successful.")
 
     def createDB(self):
         self.cursor.execute(f"CREATE DATABASE {self.db.upper()}")
